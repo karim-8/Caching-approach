@@ -1,0 +1,6 @@
+module Pods_Vodafone_task {
+  umbrella header "Pods-Vodafone task-umbrella.h"
+
+  export *
+  module * { export * }
+}

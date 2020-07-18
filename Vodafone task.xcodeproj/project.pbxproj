@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1A3BD924C1DAE800F6D80F /* ItemsViewodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A3BD824C1DAE800F6D80F /* ItemsViewodel.swift */; };
+		8C1A3BDB24C1F5B600F6D80F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A3BDA24C1F5B600F6D80F /* DataModel.swift */; };
+		8C1A3BDE24C1F74700F6D80F /* DataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A3BDD24C1F74700F6D80F /* DataRepo.swift */; };
+		8C1A3BE124C2102100F6D80F /* ViewControllers+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A3BE024C2102100F6D80F /* ViewControllers+TableView.swift */; };
+		8C1A3BE924C22D6600F6D80F /* VodafoneTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A3BE824C22D6600F6D80F /* VodafoneTaskTests.swift */; };
+		8C586A8F24BF4735007701D7 /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C586A8E24BF4735007701D7 /* SectionsViewController.swift */; };
 		8C789A9F24BB59E800B17448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C789A9E24BB59E800B17448 /* AppDelegate.swift */; };
 		8C789AA124BB59E800B17448 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C789AA024BB59E800B17448 /* SceneDelegate.swift */; };
 		8C789AA324BB59E800B17448 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C789AA224BB59E800B17448 /* ViewController.swift */; };
@@ -15,7 +21,25 @@
 		8C789AAB24BB59EA00B17448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C789AA924BB59EA00B17448 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8C1A3BEB24C22D6600F6D80F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C789A9324BB59E800B17448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C789A9A24BB59E800B17448;
+			remoteInfo = "Vodafone task";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8C1A3BD824C1DAE800F6D80F /* ItemsViewodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewodel.swift; sourceTree = "<group>"; };
+		8C1A3BDA24C1F5B600F6D80F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		8C1A3BDD24C1F74700F6D80F /* DataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepo.swift; sourceTree = "<group>"; };
+		8C1A3BE024C2102100F6D80F /* ViewControllers+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllers+TableView.swift"; sourceTree = "<group>"; };
+		8C1A3BE624C22D6600F6D80F /* VodafoneTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VodafoneTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1A3BE824C22D6600F6D80F /* VodafoneTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VodafoneTaskTests.swift; sourceTree = "<group>"; };
+		8C1A3BEA24C22D6600F6D80F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C586A8E24BF4735007701D7 /* SectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsViewController.swift; sourceTree = "<group>"; };
 		8C789A9B24BB59E800B17448 /* Vodafone task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vodafone task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C789A9E24BB59E800B17448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C789AA024BB59E800B17448 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8C1A3BE324C22D6600F6D80F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C789A9824BB59E800B17448 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +68,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1A3BD124C1D9B000F6D80F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C1A3BDA24C1F5B600F6D80F /* DataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C1A3BD224C1D9B900F6D80F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8C1A3BD824C1DAE800F6D80F /* ItemsViewodel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8C1A3BD324C1D9C300F6D80F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C586A8E24BF4735007701D7 /* SectionsViewController.swift */,
+				8C789AA224BB59E800B17448 /* ViewController.swift */,
+				8C789AA024BB59E800B17448 /* SceneDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C1A3BD424C1D9E100F6D80F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8C789AA424BB59E800B17448 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8C1A3BD524C1D9F500F6D80F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8C789A9E24BB59E800B17448 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8C1A3BD624C1DA3500F6D80F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C789AA724BB59EA00B17448 /* Assets.xcassets */,
+				8C789AA924BB59EA00B17448 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C1A3BD724C1DA5600F6D80F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		8C1A3BDC24C1F73200F6D80F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8C1A3BDD24C1F74700F6D80F /* DataRepo.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8C1A3BDF24C20FF100F6D80F /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				8C1A3BE024C2102100F6D80F /* ViewControllers+TableView.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		8C1A3BE724C22D6600F6D80F /* VodafoneTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C1A3BE824C22D6600F6D80F /* VodafoneTaskTests.swift */,
+				8C1A3BEA24C22D6600F6D80F /* Info.plist */,
+			);
+			path = VodafoneTaskTests;
+			sourceTree = "<group>";
+		};
 		8C789A9224BB59E800B17448 = {
 			isa = PBXGroup;
 			children = (
 				8C789A9D24BB59E800B17448 /* Vodafone task */,
+				8C1A3BE724C22D6600F6D80F /* VodafoneTaskTests */,
 				8C789A9C24BB59E800B17448 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				8C789A9B24BB59E800B17448 /* Vodafone task.app */,
+				8C1A3BE624C22D6600F6D80F /* VodafoneTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,13 +172,16 @@
 		8C789A9D24BB59E800B17448 /* Vodafone task */ = {
 			isa = PBXGroup;
 			children = (
-				8C789A9E24BB59E800B17448 /* AppDelegate.swift */,
-				8C789AA024BB59E800B17448 /* SceneDelegate.swift */,
-				8C789AA224BB59E800B17448 /* ViewController.swift */,
-				8C789AA424BB59E800B17448 /* Main.storyboard */,
-				8C789AA724BB59EA00B17448 /* Assets.xcassets */,
-				8C789AA924BB59EA00B17448 /* LaunchScreen.storyboard */,
+				8C1A3BD424C1D9E100F6D80F /* Storyboard */,
+				8C1A3BDF24C20FF100F6D80F /* Extenstions */,
+				8C1A3BD224C1D9B900F6D80F /* ViewModels */,
+				8C1A3BDC24C1F73200F6D80F /* Repository */,
+				8C1A3BD324C1D9C300F6D80F /* Views */,
 				8C789AAC24BB59EA00B17448 /* Info.plist */,
+				8C1A3BD724C1DA5600F6D80F /* Configuration */,
+				8C1A3BD624C1DA3500F6D80F /* Resources */,
+				8C1A3BD524C1D9F500F6D80F /* Core */,
+				8C1A3BD124C1D9B000F6D80F /* Models */,
 			);
 			path = "Vodafone task";
 			sourceTree = "<group>";
@@ -70,6 +189,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8C1A3BE524C22D6600F6D80F /* VodafoneTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C1A3BED24C22D6600F6D80F /* Build configuration list for PBXNativeTarget "VodafoneTaskTests" */;
+			buildPhases = (
+				8C1A3BE224C22D6600F6D80F /* Sources */,
+				8C1A3BE324C22D6600F6D80F /* Frameworks */,
+				8C1A3BE424C22D6600F6D80F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C1A3BEC24C22D6600F6D80F /* PBXTargetDependency */,
+			);
+			name = VodafoneTaskTests;
+			productName = VodafoneTaskTests;
+			productReference = 8C1A3BE624C22D6600F6D80F /* VodafoneTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8C789A9A24BB59E800B17448 /* Vodafone task */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C789AAF24BB59EA00B17448 /* Build configuration list for PBXNativeTarget "Vodafone task" */;
@@ -97,6 +234,10 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = Karem;
 				TargetAttributes = {
+					8C1A3BE524C22D6600F6D80F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 8C789A9A24BB59E800B17448;
+					};
 					8C789A9A24BB59E800B17448 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -116,11 +257,19 @@
 			projectRoot = "";
 			targets = (
 				8C789A9A24BB59E800B17448 /* Vodafone task */,
+				8C1A3BE524C22D6600F6D80F /* VodafoneTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8C1A3BE424C22D6600F6D80F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C789A9924BB59E800B17448 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,17 +283,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8C1A3BE224C22D6600F6D80F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1A3BE924C22D6600F6D80F /* VodafoneTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C789A9724BB59E800B17448 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8C789AA324BB59E800B17448 /* ViewController.swift in Sources */,
+				8C1A3BDE24C1F74700F6D80F /* DataRepo.swift in Sources */,
+				8C1A3BE124C2102100F6D80F /* ViewControllers+TableView.swift in Sources */,
 				8C789A9F24BB59E800B17448 /* AppDelegate.swift in Sources */,
+				8C586A8F24BF4735007701D7 /* SectionsViewController.swift in Sources */,
+				8C1A3BD924C1DAE800F6D80F /* ItemsViewodel.swift in Sources */,
 				8C789AA124BB59E800B17448 /* SceneDelegate.swift in Sources */,
+				8C1A3BDB24C1F5B600F6D80F /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C1A3BEC24C22D6600F6D80F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C789A9A24BB59E800B17448 /* Vodafone task */;
+			targetProxy = 8C1A3BEB24C22D6600F6D80F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8C789AA424BB59E800B17448 /* Main.storyboard */ = {
@@ -166,6 +336,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8C1A3BEE24C22D6600F6D80F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33B7932APH;
+				INFOPLIST_FILE = VodafoneTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karim.VodafoneTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vodafone task.app/Vodafone task";
+			};
+			name = Debug;
+		};
+		8C1A3BEF24C22D6600F6D80F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33B7932APH;
+				INFOPLIST_FILE = VodafoneTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karim.VodafoneTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vodafone task.app/Vodafone task";
+			};
+			name = Release;
+		};
 		8C789AAD24BB59EA00B17448 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -293,7 +503,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karim.Vodafone-task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,7 +521,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karim.Vodafone-task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -319,6 +529,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C1A3BED24C22D6600F6D80F /* Build configuration list for PBXNativeTarget "VodafoneTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1A3BEE24C22D6600F6D80F /* Debug */,
+				8C1A3BEF24C22D6600F6D80F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8C789A9624BB59E800B17448 /* Build configuration list for PBXProject "Vodafone task" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

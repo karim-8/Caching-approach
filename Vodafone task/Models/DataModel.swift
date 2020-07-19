@@ -1,7 +1,7 @@
 import Foundation
+import RealmSwift
 
-struct DataObjects: Codable {
-    var name: String
-    var email:String
-    
+class DataModel: Object,Codable {
+   @objc dynamic var name: String
+   @objc dynamic var email:String
 }

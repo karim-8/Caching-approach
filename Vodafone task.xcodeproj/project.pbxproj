@@ -13,6 +13,7 @@
 		8C1A3BDE24C1F74700F6D80F /* DataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A3BDD24C1F74700F6D80F /* DataRepo.swift */; };
 		8C1A3BE124C2102100F6D80F /* ViewControllers+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A3BE024C2102100F6D80F /* ViewControllers+TableView.swift */; };
 		8C1A3BE924C22D6600F6D80F /* VodafoneTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A3BE824C22D6600F6D80F /* VodafoneTaskTests.swift */; };
+		8C553EBC24C465620079FA83 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C553EBB24C465620079FA83 /* DBHelper.swift */; };
 		8C586A8F24BF4735007701D7 /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C586A8E24BF4735007701D7 /* SectionsViewController.swift */; };
 		8C789A9F24BB59E800B17448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C789A9E24BB59E800B17448 /* AppDelegate.swift */; };
 		8C789AA124BB59E800B17448 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C789AA024BB59E800B17448 /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 		8C1A3BE624C22D6600F6D80F /* VodafoneTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VodafoneTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1A3BE824C22D6600F6D80F /* VodafoneTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VodafoneTaskTests.swift; sourceTree = "<group>"; };
 		8C1A3BEA24C22D6600F6D80F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C553EBB24C465620079FA83 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		8C586A8E24BF4735007701D7 /* SectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsViewController.swift; sourceTree = "<group>"; };
 		8C789A9B24BB59E800B17448 /* Vodafone task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vodafone task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C789A9E24BB59E800B17448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 			path = VodafoneTaskTests;
 			sourceTree = "<group>";
 		};
+		8C553EBA24C4602A0079FA83 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C553EBB24C465620079FA83 /* DBHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		8C789A9224BB59E800B17448 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +189,7 @@
 		8C789A9D24BB59E800B17448 /* Vodafone task */ = {
 			isa = PBXGroup;
 			children = (
+				8C553EBA24C4602A0079FA83 /* Helpers */,
 				8C1A3BD424C1D9E100F6D80F /* Storyboard */,
 				8C1A3BDF24C20FF100F6D80F /* Extenstions */,
 				8C1A3BD224C1D9B900F6D80F /* ViewModels */,
@@ -199,7 +210,6 @@
 				BC0BEC62CB218B637645A10B /* Pods-Vodafone task.debug.xcconfig */,
 				A8561ACB1209E2D40A146EC9 /* Pods-Vodafone task.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -350,6 +360,7 @@
 				8C1A3BDE24C1F74700F6D80F /* DataRepo.swift in Sources */,
 				8C1A3BE124C2102100F6D80F /* ViewControllers+TableView.swift in Sources */,
 				8C789A9F24BB59E800B17448 /* AppDelegate.swift in Sources */,
+				8C553EBC24C465620079FA83 /* DBHelper.swift in Sources */,
 				8C586A8F24BF4735007701D7 /* SectionsViewController.swift in Sources */,
 				8C1A3BD924C1DAE800F6D80F /* ItemsViewodel.swift in Sources */,
 				8C789AA124BB59E800B17448 /* SceneDelegate.swift in Sources */,

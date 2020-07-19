@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 
 struct cellDataViewItems {
     var isOpen = Bool()
@@ -36,39 +36,25 @@ class ViewController: UIViewController {
     let screenSize:CGRect = UIScreen.main.bounds
     var cellHeaderName = "See More"
     var viewModel = ItemsViewModel()
+    let realm = try! Realm()
+
     
-    
-    
-    
-    func test (x:Int) -> Int {
-           x * x
-       }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
         getData()
 
-        print(test(x: 5))
-      
-        //Fill the array to fill table view sections & cells
-//               dataTableView = [
-//
-//               cellDataViewItems(isOpen: false, title: "Show More",
-//               sectionCellData: ["1 Flex require more than this hoho","Second","Third"]),
-//
-//               cellDataViewItems(isOpen: false, title: "Karim Two",
-//               sectionCellData: ["77","777","7777"]),
-//
-//               cellDataViewItems(isOpen: false, title: "Karim Three",
-//               sectionCellData: ["999","999999","999999999"])
-//
-//               ]
     }
     
     //MARK:- Setup the layout before initilaze screen
     func setupLayout () {
  
+        //check over internet connection
+        viewModel.moniterNetworkConnection()
+        print("Value inside VC \(viewModel.moniterNetworkConnection())")
+        //printing the database refrence
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         //Remove seperators from TableView
         self.MytableView.separatorStyle = UITableViewCellSeparatorStyle.none
         secondLabel.layer.cornerRadius = 3
